@@ -1,0 +1,72 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0a0a0a;
+    color: white;
+    text-align: center;
+    transition: all 1s;
+    overflow-x: hidden;
+}
+
+#intro {
+    margin-top: 20vh;
+    font-size: 1.2rem;
+}
+
+.hint {
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#site-laplateforme {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease-in-out;
+}
+
+#site-laplateforme.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+header {
+    background: linear-gradient(90deg, #007bff, #00c3ff);
+    padding: 2rem;
+    border-radius: 0 0 40px 40px;
+}
+
+section {
+    margin: 2rem auto;
+    max-width: 700px;
+    text-align: left;
+    background: rgba(255,255,255,0.05);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+h2 {
+    color: #00c3ff;
+}
+
+ul {
+    list-style-type: "💡 ";
+    padding-left: 1.5rem;
+}
+
+.btn {
+    background: #00c3ff;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #007bff;
+    transform: scale(1.05);
+}

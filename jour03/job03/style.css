@@ -1,0 +1,24 @@
+  #puzzle {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 5px;
+      width: 315px;
+      margin: 50px auto;
+  }
+
+  .tile {
+      width: 100px;
+      height: 100px;
+      background: tomato;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      cursor: pointer;
+      color: white;
+  }
+
+  .empty {
+      background: #eee;
+      cursor: default;
+  }

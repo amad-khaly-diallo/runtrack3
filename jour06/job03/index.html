@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemple Responsive Bootstrap</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .header {
+      background-color: #a6dcef;
+      height: 100px;
+    }
+
+    .block {
+      background-color: #7ea6e0;
+      height: 200px;
+    }
+
+
+
+    .section {
+      background-color: #b893f9;
+      height: 100px;
+    }
+
+    .footer-box {
+      background: #eee;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body class="container py-3">
+
+  <div class="box mb-3">
+    <div class="col-12 header d-flex justify-content-center align-items-center">
+      <h3>Header</h3>
+    </div>
+  </div>
+
+  <div class="row g-3 mb-3">
+    <div class="col-12 col-md-4">
+      <div class="box block d-flex justify-content-center align-items-center">
+        Bloc 1
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="box block d-flex justify-content-center align-items-center">
+        Bloc 2
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="box block d-flex justify-content-center align-items-center">
+        Bloc 3
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="row g-3 mb-3 justify-content-center align-items-center overflow-hidden">
+    <div class="col-12 col-md-8 order-2 order-md-1">
+      <div class="section box d-flex justify-content-center align-items-center">
+        Section 1
+      </div>
+    </div>
+    <div class="col-8 col-md-4 order-1 order-md-2">
+      <div class="section box d-flex justify-content-center align-items-center">
+        Section 2
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer-box" class="d-flex flex-row flex-md-column gap-3">
+    <div class="d-flex justify-content-center align-items-center flex-fill footer-box align-self-md-start">
+      Bouton 1
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-fill footer-box align-self-md-center">
+      Bouton 2
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-fill footer-box align-self-md-end">
+      Bouton 3
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

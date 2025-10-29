@@ -19,7 +19,7 @@ function updateClock() {
     setTimeout(updateClock, delay);
 }
 updateClock();
-// ========================================Minuteur==========================================
+// ===================================== Minuteur ==========================================
 function formatTime(totalSeconds) {
     totalSeconds = Math.max(0, Math.floor(totalSeconds));
     const mins = Math.floor(totalSeconds / 60);
@@ -104,7 +104,7 @@ timerStopBtn.addEventListener('click', () => {
 updateDisplay();
 
 
-// ========================================= Chrono =======================================================
+// ========================================= Chrono ==========================================
 const displayChrono = document.getElementById('chrono-display');
 const chronoStartStop = document.getElementById('chrono-toggle');
 const chronoLap = document.getElementById('chrono-lap');

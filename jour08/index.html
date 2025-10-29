@@ -5,6 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <!-- pour les betises de Mac-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="O'Clock">
+  <link rel="apple-touch-icon" href="assets/icon-512x512.png">
+
   <title>Projet Horloge / Chronomètre / Minuteur / Réveil</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,8 +36,8 @@
 
       <div class="input-row">
         <div class="time-input">
-            <input type="number" placeholder="min" id="minutes">
-            <input type="number" placeholder="sec" id="secondes">
+          <input type="number" placeholder="min" id="minutes">
+          <input type="number" placeholder="sec" id="secondes">
         </div>
         <button class="btn small" id="timer-up"><i class="fa-solid fa-arrow-up"></i></button>
         <button class="btn small" id="timer-down"><i class="fa-solid fa-arrow-down"></i></button>
@@ -73,6 +82,14 @@
 
 
   <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker enregistré '))
+        .catch(err => console.log('Erreur Service Worker ', err));
+    }
+  </script>
+
 </body>
 
 </html>

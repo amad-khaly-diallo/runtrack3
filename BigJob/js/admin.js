@@ -79,8 +79,8 @@ async function displayAllRequests() {
             <td>${new Date(request.date).toLocaleDateString('fr-FR')}</td>
             <td>${statusBadge}</td>
             <td>
-                <button class="btn btn-success btn-sm" onclick="updateRequestStatus(${request.id}, 'acceptée')" ${request.status !== 'en attente' ? 'disabled' : ''}>✅</button>
-                <button class="btn btn-danger btn-sm" onclick="updateRequestStatus(${request.id}, 'refusée')" ${request.status !== 'en attente' ? 'disabled' : ''}>❌</button>
+                <button class="btn btn-success btn-sm" onclick="updateRequestStatus(${request.id}, 'acceptée')" ${request.status !== 'en attente' ? 'disabled' : ''}>Accept</button>
+                <button class="btn btn-danger btn-sm" onclick="updateRequestStatus(${request.id}, 'refusée')" ${request.status !== 'en attente' ? 'disabled' : ''}>Deny</button>
             </td>
         `;
         tbody.appendChild(tr);

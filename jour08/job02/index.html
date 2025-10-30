@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Jour 08</title>
+</head>
+
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+
+  <header class="bg-blue-600 text-white py-4 shadow-md">
+    <nav class="flex justify-between container items-center px-4">
+      <h1 class="text-2xl font-bold">job01</h1>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:text-yellow-300">Accueil</a></li>
+        <li><a href="index.html" class="hover:text-yellow-300">Inscription</a></li>
+        <li><a href="index.html" class="hover:text-yellow-300">Connexion</a></li>
+        <li><a href="index.html" class="hover:text-yellow-300">Rechercher</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- FORMULAIRE -->
+  <main>
+    <h2>Créer un compte</h2>
+
+    <form>
+
+      <!-- Civilité -->
+      <div>
+        <label>Civilité :</label>
+        <div>
+          <label>
+            <input type="radio" name="civilite" value="monsieur">
+            <span>Monsieur</span>
+          </label>
+          <label>
+            <input type="radio" name="civilite" value="madame">
+            <span>Madame</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Informations personnelles -->
+      <div>
+        <div>
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+        </div>
+        <div>
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom">
+        </div>
+      </div>
+
+      <div>
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse" placeholder="Votre adresse">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="exemple@email.com">
+      </div>
+
+      <!-- Mot de passe -->
+      <div>
+        <div>
+          <label for="password">Mot de passe :</label>
+          <input type="password" id="password" name="password" placeholder="••••••••">
+        </div>
+        <div>
+          <label for="confirm">Confirmez :</label>
+          <input type="password" id="confirm" name="confirm" placeholder="••••••••">
+        </div>
+      </div>
+
+      <!-- Passions -->
+      <div>
+        <label>Vos passions :</label>
+        <div>
+          <label>
+            <input type="checkbox" name="passion" value="informatique">
+            <span>Informatique</span>
+          </label>
+          <label>
+            <input type="checkbox" name="passion" value="voyages">
+            <span>Voyages</span>
+          </label>
+          <label>
+            <input type="checkbox" name="passion" value="sport">
+            <span>Sport</span>
+          </label>
+          <label>
+            <input type="checkbox" name="passion" value="lecture">
+            <span>Lecture</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Bouton -->
+      <div>
+        <button type="submit">Créer mon compte</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html">Inscription</a></li>
+        <li><a href="index.html">Connexion</a></li>
+        <li><a href="index.html">Rechercher</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -119,6 +119,12 @@ header {
   gap: 20px;
 }
 
+.result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .result-item {
   display: block;
   background: #fff;
@@ -197,4 +203,8 @@ header {
   .element-page {
     padding: 30px;
   }
+}
+
+i {
+  color: white;
 }
